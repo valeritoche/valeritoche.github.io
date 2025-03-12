@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre el Tabaco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de menú -->
+    <nav class="barra-menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="antecedentes.html">Antecedentes</a></li>
+            <li><a href="clasificacion.html">Clasificación</a></li>
+            <li><a href="efectos.html">Efectos</a></li>
+            <li><a href="consecuencias.html">Consecuencias</a></li>
+            <li><a href="enfermedades.html">Enfermedades</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título principal -->
+    <header class="titulo-principal">
+        <h1>Tabaco ¡Alto!</h1>
+        <!-- Imagen grande después del título -->
+        <img src="tabaco1.jpg" alt="Imagen sobre el tabaco" class="imagen-grande">
+    </header>
+
+    <!-- Modal de bienvenida -->
+    <div id="modal-bienvenida" class="modal">
+        <div class="modal-contenido">
+            <button class="cerrar-modal">&times;</button>
+            <h2>¡Bienvenido!</h2>
+            <p>Gracias por visitar nuestra página sobre el tabaco. Aquí encontrarás información importante sobre sus efectos y consecuencias.</p>
+        </div>
+    </div>
+
+    <!-- Contenido principal con cuadro de información -->
+    <main class="contenedor">
+        <section class="cuadro-informacion">
+            <h2>¿Qué es el tabaco?</h2>
+            <p>El tabaco es una planta cuyo nombre científico es <strong>Nicotiana tabacum</strong>, de la cual se obtienen productos como cigarrillos, puros, tabaco de mascar y otros derivados. Su uso está principalmente asociado con la combustión y la inhalación del humo, aunque también se consume de otras formas.</p>
+        </section>
+
+        <!-- Cuadro de información extra -->
+        <section class="cuadro-extra">
+            <h3>MÓDULO: Establece comunicación informática</h3>
+            <h4>SUBMÓDULO: Gestiona información a través de plataformas digitales</h4>
+            <p><strong>Campaña:</strong> Si te drogas te dañas  
+                <a href="https://www.gob.mx/conafe/documentos/estrategia-en-el-aula-prevencion-de-adicciones-332147" target="_blank">Ver más información</a></p>
+            <p><strong>CBTA N.181 "General José María Morelos y Pavón"</strong></p>
+            <p><strong>Estudiantes:</strong>  
+                Rosa Itzel Mondragón Villanueva,  
+                Ingrid Moreno Morquecho,  
+                Valeria Sánchez Ramírez</p>
+            <p><strong>6B Técnicos en Ofimática</strong></p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; CBTA 181</p>
+    </footer>
+
+    <!-- Script para el modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('modal-bienvenida');
+            const cerrarModal = document.querySelector('.cerrar-modal');
+
+            if (!localStorage.getItem('modalVisto')) {
+                modal.style.display = 'block';
+            }
+
+            cerrarModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+                localStorage.setItem('modalVisto', 'true');
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    localStorage.setItem('modalVisto', 'true');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
