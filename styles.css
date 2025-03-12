@@ -1,0 +1,168 @@
+/* ==================== */
+/* Estilos Generales */
+/* ==================== */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* ==================== */
+/* Contenedor principal */
+/* ==================== */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+/* ==================== */
+/* Título Principal */
+/* ==================== */
+.titulo-principal {
+    text-align: center;
+    margin-top: 80px; /* Para evitar que choque con la barra de menú */
+}
+
+.titulo-principal h1 {
+    font-size: 3.5em;
+    color: #ff7f7f; /* Color rojo */
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7); /* Sombra roja */
+}
+
+/* ==================== */
+/* Imagen Grande después del título */
+/* ==================== */
+.imagen-grande {
+    width: 100%;
+    max-width: 1200px; /* Ajuste para que no se haga demasiado grande */
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Para centrar la imagen */
+    border-radius: 8px;
+}
+
+/* ==================== */
+/* Contenedor principal para el cuadro de información */
+/* ==================== */
+.cuadro-informacion {
+    background-color: #2a2a2a; /* Fondo oscuro para el cuadro */
+    color: #e0e0e0; /* Texto claro */
+    padding: 40px; /* Más espacio interno */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 1000px; /* Aumentamos el tamaño máximo del cuadro */
+    margin: 50px auto; /* Centrado y separación superior */
+    text-align: justify;
+}
+
+/* ==================== */
+/* Mejorar el estilo del título dentro del cuadro */
+/* ==================== */
+.cuadro-informacion h2 {
+    color: #ff7f7f;
+    font-size: 2.5em; /* Aumentar el tamaño del título */
+    margin-bottom: 20px;
+}
+
+
+/* ==================== */
+/* Cuadro Extra - Resaltado */
+/* ==================== */
+.cuadro-extra {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.7);
+    max-width: 45%;
+    min-width: 300px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #ff7f7f;
+}
+
+/* ==================== */
+/* Estilos para títulos en cuadros */
+/* ==================== */
+.cuadro-extra h3, .cuadro-extra h4 {
+    color: #8b0000;
+}
+
+/* ==================== */
+/* Barra de menú */
+/* ==================== */
+.barra-menu {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.barra-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-menu ul li {
+    margin: 0 20px;
+}
+
+.barra-menu ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.barra-menu ul li a:hover {
+    background-color: #ff7f7f;
+    color: #121212;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 127, 127, 0.6);
+}
+
+/* ==================== */
+/* Pie de Página */
+/* ==================== */
+footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+/* ==================== */
+/* Modal de Bienvenida */
+/* ==================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
