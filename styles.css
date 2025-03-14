@@ -27,7 +27,7 @@ body {
 /* ==================== */
 .titulo-principal {
     text-align: center;
-    margin-top: 80px; /* Para evitar que choque con la barra de menú */
+    margin-top: 160px; /* Para evitar que choque con la barra de menú */
 }
 
 .titulo-principal h1 {
@@ -74,21 +74,19 @@ body {
 }
 
 
-/* ==================== */
-/* Cuadro Extra - Resaltado */
-/* ==================== */
 .cuadro-extra {
     background-color: #ffcc00;
     color: #121212;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(255, 204, 0, 0.7);
-    max-width: 45%;
-    min-width: 300px;
+    max-width: 600px; /* Ajuste del ancho */
+    margin: 40px auto; /* Auto en los lados lo centra */
     text-align: center;
     font-weight: bold;
     border: 2px solid #ff7f7f;
 }
+
 
 /* ==================== */
 /* Estilos para títulos en cuadros */
@@ -166,3 +164,17 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* ==================== */
+/* Estilos del Logo */
+/* ==================== */
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 100px;  /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 8px;  /* Opcional: Agrega esquinas redondeadas */
+}
